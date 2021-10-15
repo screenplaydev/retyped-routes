@@ -94,10 +94,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@screenplaydev/retype@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@screenplaydev/retype@npm:0.2.0"
-  checksum: 9b633e952ccf172609f91157eb939b5aaabcde97ad222b3b942b3acf9ecf22f0e20aa7a8e63070ec48cbdac7ddcb52d3051e93250ecb7c789f828a0c9bd03e2a
+"@screenplaydev/retype@npm:^0.3.1":
+  version: 0.3.1
+  resolution: "@screenplaydev/retype@npm:0.3.1"
+  checksum: 6de6f7a08d9eb582a7dc361edf93ae79414c021b10c516048ef6ae1230857143535fde189d74d7d9e256fdf60b6b94cd7f6ffc4e9c5339ca55e5bb011fea5743
   languageName: node
   linkType: hard
 
@@ -105,7 +105,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@screenplaydev/retyped-routes@workspace:."
   dependencies:
-    "@screenplaydev/retype": ^0.2.0
+    "@screenplaydev/retype": ^0.3.1
     "@types/isomorphic-fetch": ^0.0.35
     "@types/node": ^14.14.37
     "@types/path-to-regexp": ^1.7.0
