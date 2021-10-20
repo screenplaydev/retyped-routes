@@ -4,9 +4,18 @@ import * as pathToRegexp from "path-to-regexp";
 import { TRoute } from "./types";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-function serializeURLArgs(obj: { [index: string]: any }): string {
+function serializeURLArgs(
+  obj: { [index: string]: any },
+  sortArgs?: boolean
+): string {
   const str = [];
-  for (const p in obj) {
+
+  const args = Object.keys(obj);
+  if (sortArgs) {
+    args.sort();
+  }
+
+  for (const p of args) {
     const v = obj[p];
     if (v !== undefined) {
       /**
@@ -28,7 +37,8 @@ export function endpointWithArgs<TActualRoute extends TRoute>(
     method: "GET";
   },
   queryParams?: t.UnwrapSchemaMap<TActualRoute["queryParams"]>,
-  urlParams?: t.UnwrapSchemaMap<TActualRoute["urlParams"]>
+  urlParams?: t.UnwrapSchemaMap<TActualRoute["urlParams"]>,
+  opts?: { sortQueryParams: boolean }
 ): string {
   // Inspired by https://github.com/ReactTraining/react-router/blob/ea44618e68f6a112e48404b2ea0da3e207daf4f0/packages/react-router/modules/generatePath.js
   const path = urlParams
@@ -37,7 +47,7 @@ export function endpointWithArgs<TActualRoute extends TRoute>(
   let url = apiServer + path;
 
   if (queryParams) {
-    const urlArgs = serializeURLArgs(queryParams);
+    const urlArgs = serializeURLArgs(queryParams, opts?.sortQueryParams);
     if (urlArgs != "") {
       url += "?" + urlArgs;
     }
@@ -69,7 +79,10 @@ export function formatReqDetails<TActualRoute extends TRoute>(
     : t.UnwrapSchemaMap<TActualRoute["params"]>,
   queryParams?: t.UnwrapSchemaMap<TActualRoute["queryParams"]>,
   urlParams?: t.UnwrapSchemaMap<TActualRoute["urlParams"]>,
-  headers?: t.UnwrapSchemaMap<TActualRoute["headers"]>
+  headers?: t.UnwrapSchemaMap<TActualRoute["headers"]>,
+  opts?: {
+    sortQueryParams: boolean;
+  }
 ): {
   url: string;
   method: string;
@@ -85,7 +98,7 @@ export function formatReqDetails<TActualRoute extends TRoute>(
 
   if (route.method == "GET") {
     if (queryParams) {
-      const urlArgs = serializeURLArgs(queryParams);
+      const urlArgs = serializeURLArgs(queryParams, opts?.sortQueryParams);
       if (urlArgs != "") {
         url += "?" + urlArgs;
       }
