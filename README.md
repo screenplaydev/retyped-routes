@@ -2,19 +2,19 @@
 
 ## About
 
-Retyped routes provides a type-safe way to create API definitions with [retype](https://github.com/screenplaydev/retype) in a way that can be read both by the server and client.
+Retyped routes provides a type-safe way to create API definitions with [retype](https://github.com/withgraphite/retype) in a way that can be read both by the server and client.
 
 ## Install
 
 ```
-yarn add @screenplaydev/retyped-routes
+yarn add @withgraphite/retyped-routes
 ```
 
 ## Usage
 
 ```typescript
-import * as t from "@screenplaydev/retype";
-import { asRouteTree } from "@screenplaydev/retyped-routes";
+import * as t from "@withgraphite/retype";
+import { asRouteTree } from "@withgraphite/retyped-routes";
 
 const API_ROUTES = asRouteTree({
   login: {
