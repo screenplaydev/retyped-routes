@@ -1,4 +1,4 @@
-import * as t from "@screenplaydev/retype";
+import * as t from "@withgraphite/retype";
 import "isomorphic-fetch";
 import * as pathToRegexp from "path-to-regexp";
 import { TRoute } from "./types";

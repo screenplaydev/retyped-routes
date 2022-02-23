@@ -1,4 +1,4 @@
-import * as t from "@screenplaydev/retype";
+import * as t from "@withgraphite/retype";
 
 export type TRoute = {
   url: string;
