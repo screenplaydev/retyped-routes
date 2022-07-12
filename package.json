@@ -15,7 +15,7 @@
   "dependencies": {
     "@types/isomorphic-fetch": "^0.0.35",
     "@types/node": "^14.14.37",
-    "@withgraphite/retype": "^0.3.1",
+    "@withgraphite/retype": "^0.3.11",
     "isomorphic-fetch": "^3.0.0",
     "path-to-regexp": "^6.1.0"
   },

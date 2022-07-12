@@ -223,10 +223,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@withgraphite/retype@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@withgraphite/retype@npm:0.3.1"
-  checksum: dd54e20776a7e3169c49088a650d421719e49d7ade4e0b4f5a0dceb748e4a27d088cb3adc999df77ef45b590c3e0b600afd4b1f9dda85aa843a4f5de502123dc
+"@withgraphite/retype@npm:^0.3.11":
+  version: 0.3.11
+  resolution: "@withgraphite/retype@npm:0.3.11"
+  checksum: b4a6da7fd7002998daf614a11fa4f17c9a2363f08aa4b0b13b82caccbb6b3b66004831bd75e72a306d553c03cb1f64fab8acbdd3a01a59bf89b7481537ba128f
   languageName: node
   linkType: hard
 
@@ -239,7 +239,7 @@ __metadata:
     "@types/path-to-regexp": ^1.7.0
     "@typescript-eslint/eslint-plugin": ^4.15.2
     "@typescript-eslint/parser": ^4.15.2
-    "@withgraphite/retype": ^0.3.1
+    "@withgraphite/retype": ^0.3.11
     eslint: ^7.20.0
     isomorphic-fetch: ^3.0.0
     path-to-regexp: ^6.1.0
