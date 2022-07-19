@@ -1,6 +1,6 @@
 {
   "name": "@withgraphite/retyped-routes",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "None",
@@ -13,13 +13,13 @@
     "dist/"
   ],
   "dependencies": {
-    "@types/isomorphic-fetch": "^0.0.35",
-    "@types/node": "^14.14.37",
     "@withgraphite/retype": "^0.3.11",
     "isomorphic-fetch": "^3.0.0",
     "path-to-regexp": "^6.1.0"
   },
   "devDependencies": {
+    "@types/isomorphic-fetch": "^0.0.35",
+    "@types/node": "^14.14.37",
     "@types/path-to-regexp": "^1.7.0",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
