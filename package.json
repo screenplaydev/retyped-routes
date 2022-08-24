@@ -1,6 +1,6 @@
 {
   "name": "@withgraphite/retyped-routes",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "None",
@@ -10,6 +10,7 @@
     "url": "https://github.com@withgraphite/retyped-routes"
   },
   "files": [
+    "src",
     "dist/"
   ],
   "dependencies": {
