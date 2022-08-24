@@ -1,6 +1,6 @@
 {
   "name": "@withgraphite/retyped-routes",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "None",
@@ -14,7 +14,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@withgraphite/retype": "^0.3.11",
+    "@withgraphite/retype": "^0.3.12",
     "isomorphic-fetch": "^3.0.0",
     "path-to-regexp": "^6.1.0"
   },
