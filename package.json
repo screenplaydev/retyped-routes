@@ -14,7 +14,7 @@
     "dist/"
   ],
   "dependencies": {
-    "@withgraphite/retype": "^0.3.13",
+    "@withgraphite/retype": "^0.3.14",
     "isomorphic-fetch": "^3.0.0",
     "path-to-regexp": "^6.1.0"
   },
